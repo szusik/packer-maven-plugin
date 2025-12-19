@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<packr.version>2.2-SNAPSHOT</packr.version>
+		<packr.version>4.0.0</packr.version>
 	</properties>
 
 	<prerequisites>
@@ -25,7 +25,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-plugin-plugin</artifactId>
-				<version>3.5.1</version>
+				<version>3.15.2</version>
 				<configuration>
 					<skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
 				</configuration>
@@ -50,13 +50,13 @@
 		<dependency>
 			<groupId>org.apache.maven</groupId>
 			<artifactId>maven-plugin-api</artifactId>
-			<version>3.5.2</version>
+			<version>3.9.12</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.maven.plugin-tools</groupId>
 			<artifactId>maven-plugin-annotations</artifactId>
-			<version>3.5.1</version>
+			<version>3.15.2</version>
 			<type>jar</type>
 		</dependency>
 		<dependency>
@@ -65,5 +65,17 @@
 			<version>${packr.version}</version>
 			<type>jar</type>
 		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-compress</artifactId>
+		    <version>1.28.0</version>
+		</dependency>
 	</dependencies>
+	<repositories>
+		<repository>
+			<id>ng-public</id>
+			<url>https://artifactory.nimblygames.com/artifactory/ng-public</url>
+			<name>Nible games / badlogic repo</name>
+		</repository>
+	</repositories>
 </project>

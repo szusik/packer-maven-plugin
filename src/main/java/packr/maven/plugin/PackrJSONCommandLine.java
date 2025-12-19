@@ -133,4 +133,19 @@ public class PackrJSONCommandLine implements PackrCommandLine {
 	public List<String> removePlatformLibs() {
 		throw new UnsupportedOperationException("No plan to implement.");
 	}
+
+	@Override
+	public String jrePath() {
+		throw new UnsupportedOperationException("No plan to implement.");
+	}
+
+	@Override
+	public File platformLibsOutDir() {
+		throw new UnsupportedOperationException("No plan to implement.");
+	}
+
+	@Override
+	public boolean useZgcIfSupportedOs() {
+		return false; //well not plan to support this either way
+	}
 }
